@@ -1,8 +1,7 @@
-# HighWaterMark
+# high\_water\_mark
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/high_water_mark`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Maintains a directory of high water mark metrics for the quality
+tools - used by [quality gem](https://github.com/apiology/quality) and friends
 
 ## Installation
 

@@ -1,13 +1,15 @@
-require "bundler/setup"
-require "high_water_mark"
+# frozen_string_literal: true
+
+require 'simplecov'
+
+SimpleCov.start do
+  # this dir used by TravisCI
+  add_filter 'vendor'
+end
+SimpleCov.refuse_coverage_drop
 
 RSpec.configure do |config|
-  # Enable flags like --only-failures and --next-failure
-  config.example_status_persistence_file_path = ".rspec_status"
-
-  # Disable RSpec exposing methods globally on `Module` and `main`
-  config.disable_monkey_patching!
-
+  config.order = 'random'
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
