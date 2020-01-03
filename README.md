@@ -1,5 +1,7 @@
 # high\_water\_mark
 
+[![CircleCI](https://circleci.com/gh/apiology/high_water_mark.svg?style=svg)](https://circleci.com/gh/apiology/high_water_mark)
+
 Maintains a directory of high water mark metrics for the quality
 tools - used by [quality gem](https://github.com/apiology/quality) and friends
 
