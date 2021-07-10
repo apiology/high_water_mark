@@ -1,7 +1,7 @@
 # high\_water\_mark
 
 [![CircleCI](https://circleci.com/gh/apiology/high_water_mark.svg?style=svg)](https://circleci.com/gh/apiology/high_water_mark)
-[![Build Status](https://travis-ci.com/apiology/high_water_mark.svg?branch=master)](https://travis-ci.com/apiology/high_water_mark)
+[![Build Status](https://travis-ci.com/apiology/high_water_mark.svg?branch=main)](https://travis-ci.com/apiology/high_water_mark)
 
 Maintains a directory of high water mark metrics for the quality
 tools - used by [quality gem](https://github.com/apiology/quality) and friends
@@ -45,7 +45,7 @@ Bug reports and pull requests are welcome
 [on GitHub](https://github.com/apiology/high_water_mark). This project is
 intended to be a safe, welcoming space for collaboration, and
 contributors are expected to adhere to the
-[code of conduct](https://github.com/apiology/high_water_mark/blob/master/CODE_OF_CONDUCT.md).
+[code of conduct](https://github.com/apiology/high_water_mark/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -55,4 +55,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 Everyone interacting in the HighWaterMark project's codebases, issue
 trackers, chat rooms and mailing lists is expected to follow the
-[code of conduct](https://github.com/apiology/high_water_mark/blob/master/CODE_OF_CONDUCT.md).
+[code of conduct](https://github.com/apiology/high_water_mark/blob/main/CODE_OF_CONDUCT.md).
