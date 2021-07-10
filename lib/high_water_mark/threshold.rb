@@ -21,7 +21,7 @@ module HighWaterMark
 
     def write_violations(new_violations)
       @count_file.open(@filename, 'w') do |file|
-        file.write(new_violations.to_s + "\n")
+        file.write("#{new_violations}\n")
       end
     end
   end

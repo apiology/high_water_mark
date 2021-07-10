@@ -48,13 +48,13 @@ describe HighWaterMark::Threshold do
 
     before do
       allow(count_file).to receive(:open).with(metrics_filename, 'w')
-                                         .and_yield(file)
-      allow(file).to receive(:write).with(new_violations.to_s + "\n")
+        .and_yield(file)
+      allow(file).to receive(:write).with("#{new_violations}\n")
     end
 
     it 'is written' do
       quality_threshold.write_violations(new_violations)
-      expect(file).to have_received(:write).with(new_violations.to_s + "\n")
+      expect(file).to have_received(:write).with("#{new_violations}\n")
     end
   end
 end
