@@ -1,6 +1,3 @@
-require "high_water_mark/version"
+# frozen_string_literal: true
 
-module HighWaterMark
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require 'high_water_mark/version'
