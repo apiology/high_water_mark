@@ -10,15 +10,14 @@ Gem::Specification.new do |spec|
   spec.version       = HighWaterMark::VERSION
   spec.authors       = ['Vince Broz']
   spec.email         = ['vince@broz.cc']
-
   spec.summary       = 'Maintains a directory of high water mark metrics ' \
                        'for quality tools'
   spec.description   = 'Maintains a directory of high water mark metrics ' \
                        'for quality tools - ' \
                        'used by https://github.com/apiology/quality and friends'
   spec.homepage      = 'https://github.com/apiology/high_water_mark'
-  spec.license       = 'MIT'
-  spec.required_ruby_version = '>= 2.6'
+  spec.license       = 'MIT license'
+  spec.required_ruby_version = '>= 2.7'
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/apiology/high_water_mark'
 
@@ -36,6 +35,8 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bump'
   spec.add_development_dependency 'bundler'
+  spec.add_development_dependency 'fakeweb'
+  spec.add_development_dependency 'mdl'
   # 0.58.0 and 0.57.0 don't seem super compatible with signatures, and
   # magit doesn't seem to want to use the bundled version at the moment,
   # so let's favor the more recent version...
@@ -43,11 +44,16 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pry'
   spec.add_development_dependency 'rake', '~> 13.0'
   spec.add_development_dependency 'rspec', '>=3.4'
-  spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'rubocop', ['~> 1.36']
   spec.add_development_dependency 'rubocop-rake'
-  spec.add_development_dependency 'rubocop-rspec'
+  # ensure version with RSpec/VerifiedDoubleReference
+  spec.add_development_dependency 'rubocop-rspec', ['>=2.10.0']
   # ensure version with branch coverage
   spec.add_development_dependency 'simplecov', ['>=0.18.0']
   spec.add_development_dependency 'simplecov-lcov'
   spec.add_development_dependency 'undercover'
+  spec.add_development_dependency 'webmock'
+  spec.metadata = {
+    'rubygems_mfa_required' => 'true',
+  }
 end
