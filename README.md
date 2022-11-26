@@ -38,13 +38,17 @@ install`. To release a new version, update the version number in
 create a git tag for the version, push git commits and tags, and push
 the `.gem` file to [rubygems.org](https://rubygems.org).
 
-## Contributing
+## Contributions
 
-Bug reports and pull requests are welcome
-[on GitHub](https://github.com/apiology/high_water_mark). This project is
-intended to be a safe, welcoming space for collaboration, and
-contributors are expected to adhere to the
-[code of conduct](https://github.com/apiology/high_water_mark/blob/main/CODE_OF_CONDUCT.md).
+This project, as with all others, rests on the shoulders of a broad
+ecosystem supported by many volunteers doing thankless work, along
+with specific contributors.
+
+In particular I'd like to call out:
+
+* [Audrey Roy Greenfeld](https://github.com/audreyfeldroy) for the
+  cookiecutter tool and associated examples, which keep my many
+  projects building with shared boilerplate with a minimum of fuss.
 
 ## License
 
