@@ -37,7 +37,7 @@ describe HighWaterMark::Threshold do
     context 'when high water mark file does not exist' do
       let(:file_exists) { false }
 
-      it { is_expected.to be nil }
+      it { is_expected.to be_nil }
     end
   end
 
